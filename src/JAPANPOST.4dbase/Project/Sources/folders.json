@@ -1,0 +1,24 @@
+{
+	"private": {
+		"methods": [
+			"double_quote",
+			"m_setup",
+			"new_query_params",
+			"trim_double_quotes"
+		]
+	},
+	"TEST": {
+		"methods": [
+			"TEST"
+		]
+	},
+	"郵便番号": {
+		"tables": [
+			"住所の郵便番号"
+		],
+		"methods": [
+			"import_postcode"
+		]
+	},
+	"trash": {}
+}
