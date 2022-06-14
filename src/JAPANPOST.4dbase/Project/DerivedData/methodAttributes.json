@@ -1,0 +1,50 @@
+{
+	"methods": {
+		"new_query_params": {
+			"timeStamp": "2020-08-12T13:31:08.000Z",
+			"attributes": {
+				"invisible": true,
+				"preemptive": "capable"
+			}
+		},
+		"trim_double_quotes": {
+			"timeStamp": "2020-08-12T14:07:55.000Z",
+			"attributes": {
+				"invisible": true,
+				"preemptive": "capable"
+			}
+		},
+		"TEST": {
+			"timeStamp": "2021-12-27T05:36:42.830Z"
+		},
+		"ds郵便番号": {
+			"timeStamp": "2021-12-27T05:27:17.098Z",
+			"attributes": {
+				"invisible": true,
+				"shared": true,
+				"preemptive": "capable"
+			}
+		},
+		"double_quote": {
+			"timeStamp": "2020-08-12T14:10:03.000Z",
+			"attributes": {
+				"invisible": true,
+				"preemptive": "capable"
+			}
+		},
+		"m_setup": {
+			"timeStamp": "2021-12-27T05:35:39.135Z",
+			"attributes": {
+				"invisible": true,
+				"preemptive": "capable"
+			}
+		},
+		"import_postcode": {
+			"timeStamp": "2021-02-15T11:51:00.000Z",
+			"attributes": {
+				"invisible": true,
+				"preemptive": "incapable"
+			}
+		}
+	}
+}

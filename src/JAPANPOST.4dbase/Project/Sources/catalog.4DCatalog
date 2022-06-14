@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="JAPANPOST" uuid="EF8050DF05174089B02FBE214BA3B675" collation_locale="ja">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="住所の郵便番号" uuid="AEB6D8ED0B0D441A920A4B6F6E00AE74" id="1">
+		<field name="ID" uuid="FABEC06C52FD48569ACAAE82D5A1462F" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="郵便番号" uuid="E0D91894CF3C4294AEE19AB40628AEC7" type="10" limiting_length="7" never_null="true" id="2">
+			<field_extra>
+				<editor_field_info>
+					<color red="148" green="23" blue="81" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="都道府県名" uuid="474DC701CF334083967162EC866623A2" type="10" never_null="true" id="3">
+			<field_extra>
+				<editor_field_info>
+					<color red="43" green="60" blue="105" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="市区町村名" uuid="2499285144D643118F7D7A5EE587EDFD" type="10" never_null="true" id="4">
+			<field_extra>
+				<editor_field_info>
+					<color red="43" green="60" blue="105" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="町域名" uuid="0794DCE86F084797BDDAD8AA2CB71210" type="10" never_null="true" id="5">
+			<field_extra>
+				<editor_field_info>
+					<color red="43" green="60" blue="105" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="項目" uuid="B02A2CAC071C4E6CB804D3A3A8E2D604" type="21" blob_switch_size="2147483647" never_null="true" id="7">
+			<field_extra>
+				<editor_field_info>
+					<color red="0" green="145" blue="147" alpha="255"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<primary_key field_name="ID" field_uuid="FABEC06C52FD48569ACAAE82D5A1462F"/>
+		<table_extra>
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="255"/>
+				<coordinates left="0" top="0" width="120" height="190.20027196407"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" uuid="136A65992AE5437389473FB9C34089E7" type="3">
+		<field_ref uuid="0794DCE86F084797BDDAD8AA2CB71210" name="町域名">
+			<table_ref uuid="AEB6D8ED0B0D441A920A4B6F6E00AE74" name="住所の郵便番号"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="3EA4345D407A4A21AFAF778B1308B336" type="3">
+		<field_ref uuid="474DC701CF334083967162EC866623A2" name="都道府県名">
+			<table_ref uuid="AEB6D8ED0B0D441A920A4B6F6E00AE74" name="住所の郵便番号"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="45A6C468ED744E939C3D16E1CB8F5C24" type="3">
+		<field_ref uuid="2499285144D643118F7D7A5EE587EDFD" name="市区町村名">
+			<table_ref uuid="AEB6D8ED0B0D441A920A4B6F6E00AE74" name="住所の郵便番号"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="AC33FC3A0DC6456E99A9B6676EAF22F2" type="7">
+		<field_ref uuid="FABEC06C52FD48569ACAAE82D5A1462F" name="ID">
+			<table_ref uuid="AEB6D8ED0B0D441A920A4B6F6E00AE74" name="住所の郵便番号"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="DFC4B76558114B7D8F65D8F33721093C" type="1">
+		<field_ref uuid="E0D91894CF3C4294AEE19AB40628AEC7" name="郵便番号">
+			<table_ref uuid="AEB6D8ED0B0D441A920A4B6F6E00AE74" name="住所の郵便番号"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="F640209C816545F19B28749C953E9A0C" type="3">
+		<field_ref uuid="B02A2CAC071C4E6CB804D3A3A8E2D604" name="項目">
+			<table_ref uuid="AEB6D8ED0B0D441A920A4B6F6E00AE74" name="住所の郵便番号"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:68.1.0, alternate=search" __keywordBuildingHash="mecab:0.996;sys.dic:102;">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>
